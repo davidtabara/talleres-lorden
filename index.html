@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talleres Lorden | Excelencia Automotriz</title>
+    <meta name="description" content="Taller Premium en Fuenlabrada. Especialistas en Chapa, Pintura y Mecánica de alta gama.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Russo+One&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        /* --- CONFIGURACIÓN SUPREMA --- */
+        :root {
+            --primary: #ff3b30; /* Rojo Ferrari */
+            --primary-glow: rgba(255, 59, 48, 0.4);
+            --dark-bg: #0a0a0a;
+            --card-bg: rgba(255, 255, 255, 0.05); /* Cristal Oscuro */
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --text: #ffffff;
+            --text-muted: #a0a0a0;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        
+        body { 
+            font-family: 'Montserrat', sans-serif; 
+            background-color: var(--dark-bg); 
+            color: var(--text); 
+            overflow-x: hidden;
+        }
+
+        /* --- PRELOADER ANIMADO --- */
+        #preloader {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100vh;
+            background: #000; z-index: 9999; display: flex; flex-direction: column;
+            justify-content: center; align-items: center; transition: opacity 0.6s ease;
+        }
+        .gauge-loader {
+            width: 150px; height: 75px; border-top-left-radius: 100px; border-top-right-radius: 100px;
+            border: 5px solid rgba(255,255,255,0.1); border-bottom: 0; position: relative; overflow: hidden;
+        }
+        .gauge-fill {
+            position: absolute; top: 100%; left: 0; width: 100%; height: 100%;
+            background: var(--primary); transform-origin: center bottom;
+            animation: gaugeLoading 1.5s ease-in-out infinite;
+        }
+        @keyframes gaugeLoading { 0% { transform: rotate(-180deg); } 50% { transform: rotate(0deg); } 100% { transform: rotate(-180deg); } }
+        .loading-text { margin-top: 20px; font-family: 'Russo One'; letter-spacing: 2px; animation: blink 1s infinite; }
+
+        /* --- TIPOGRAFÍA --- */
+        h1, h2, h3 { font-family: 'Russo One', sans-serif; text-transform: uppercase; letter-spacing: 1px; }
+        p { color: var(--text-muted); font-weight: 300; line-height: 1.7; }
+
+        /* --- UI DE CRISTAL (GLASSMORPHISM) --- */
+        .glass {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+        }
+
+        /* --- NAVEGACIÓN --- */
+        .navbar {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 20px 5%; position: fixed; width: 100%; top: 0; z-index: 1000;
+            transition: 0.4s; background: rgba(0,0,0,0.2);
+        }
+        .navbar.scrolled { background: rgba(0,0,0,0.9); padding: 15px 5%; border-bottom: 1px solid var(--primary); }
+        
+        .logo { font-size: 1.8rem; color: #fff; text-shadow: 0 0 10px rgba(0,0,0,0.5); }
+        .logo span { color: var(--primary); }
+        
+        .nav-links { display: flex; gap: 30px; }
+        .nav-links a { color: #fff; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; position: relative; transition: 0.3s; }
+        .nav-links a:hover { color: var(--primary); text-shadow: 0 0 10px var(--primary-glow); }
+
+        /* --- HERO VIDEO BACKGROUND --- */
+        .hero {
+            position: relative; height: 100vh; display: flex; align-items: center; justify-content: center;
+            text-align: center; overflow: hidden;
+        }
+        .video-bg {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;
+            filter: brightness(0.4); 
+        }
+        .hero-content { z-index: 2; max-width: 900px; padding: 20px; }
+        .hero-content h1 { 
+            font-size: 4.5rem; line-height: 1; margin-bottom: 20px; 
+            background: linear-gradient(to right, #fff, #bbb); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        }
+        .hero-badges { display: flex; justify-content: center; gap: 20px; margin-bottom: 40px; }
+        .badge { background: rgba(255,255,255,0.1); padding: 8px 15px; border-radius: 50px; font-size: 0.8rem; border: 1px solid rgba(255,255,255,0.2); }
+
+        /* --- BOTONES NEÓN --- */
+        .btn {
+            padding: 15px 40px; border-radius: 50px; font-weight: 800; text-transform: uppercase;
+            border: none; cursor: pointer; transition: 0.3s; letter-spacing: 1px;
+            position: relative; overflow: hidden; z-index: 1;
+        }
+        .btn-primary { background: var(--primary); color: #fff; box-shadow: 0 0 20px var(--primary-glow); }
+        .btn-primary:hover { transform: scale(1.05); box-shadow: 0 0 40px var(--primary-glow); }
+        
+        /* --- ESTADÍSTICAS (COUNTERS) --- */
+        .stats-bar {
+            display: flex; justify-content: space-around; flex-wrap: wrap; padding: 50px 5%;
+            background: linear-gradient(to bottom, #000, #111); border-bottom: 1px solid #222;
+        }
+        .stat-item { text-align: center; margin: 20px; }
+        .stat-number { font-size: 3rem; font-family: 'Russo One'; color: var(--primary); display: block; }
+        .stat-label { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; }
+
+        /* --- SERVICIOS 3D TILT --- */
+        .section-padding { padding: 100px 5%; }
+        .section-header { text-align: center; margin-bottom: 70px; }
+        .section-header h2 { font-size: 3rem; margin-bottom: 10px; }
+        .section-header span { color: var(--primary); }
+        
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; perspective: 1000px; }
+        .service-card {
+            padding: 50px 30px; text-align: center; transition: transform 0.1s;
+            transform-style: preserve-3d;
+        }
+        .service-icon { 
+            font-size: 4rem; color: var(--primary); margin-bottom: 30px; 
+            filter: drop-shadow(0 0 10px var(--primary-glow)); transform: translateZ(20px);
+        }
+        .service-card h3 { margin-bottom: 15px; transform: translateZ(20px); }
+        .service-card p { transform: translateZ(20px); }
+
+        /* --- CHAPA COMPARADOR --- */
+        .comparison-wrapper { display: flex; flex-wrap: wrap; gap: 50px; align-items: center; }
+        .comparison-info { flex: 1; min-width: 300px; }
+        .comparison-info ul li { margin-bottom: 15px; display: flex; align-items: center; font-size: 1.1rem; }
+        .comparison-info i { color: var(--primary); margin-right: 15px; }
+        
+        .img-comp-container { 
+            position: relative; height: 400px; flex: 1; min-width: 300px; overflow: hidden; 
+            border-radius: 20px; border: 2px solid var(--glass-border); box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+        .img-comp-img { position: absolute; width: auto; height: 100%; overflow: hidden; }
+        .img-comp-img img { display: block; height: 100%; width: auto; max-width: none; }
+        .slider-bar {
+            position: absolute; width: 4px; height: 100%; background: var(--primary); left: 50%; z-index: 9;
+            box-shadow: 0 0 15px var(--primary); cursor: ew-resize; display: flex; align-items: center; justify-content: center;
+        }
+        .slider-button {
+            width: 50px; height: 50px; background: #fff; border-radius: 50%; 
+            display: flex; align-items: center; justify-content: center; color: var(--primary);
+            box-shadow: 0 0 20px rgba(255,255,255,0.5); font-size: 1.2rem;
+        }
+
+        /* --- FORMULARIO & CONTACTO --- */
+        .contact-section { background: url('https://images.unsplash.com/photo-1486262715619-01b8c2297605?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') fixed center/cover; position: relative; }
+        .contact-overlay { position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.85); }
+        .contact-content { position: relative; z-index: 2; display: flex; flex-wrap: wrap; gap: 50px; }
+        
+        .form-box { flex: 1; min-width: 300px; padding: 40px; }
+        .input-group { position: relative; margin-bottom: 25px; }
+        .input-group input, .input-group select, .input-group textarea {
+            width: 100%; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+            padding: 15px; color: #fff; border-radius: 8px; font-family: inherit; transition: 0.3s;
+        }
+        .input-group input:focus, .input-group textarea:focus { 
+            border-color: var(--primary); box-shadow: 0 0 15px var(--primary-glow); outline: none; background: rgba(0,0,0,0.5);
+        }
+        .btn-whatsapp { width: 100%; background: #25d366; color: #fff; display: flex; justify-content: center; gap: 10px; align-items: center; }
+        .btn-whatsapp:hover { background: #128c7e; box-shadow: 0 0 20px rgba(37, 211, 102, 0.4); transform: scale(1.02); }
+
+        /* --- FOOTER --- */
+        footer { background: #000; padding: 60px 5% 20px; border-top: 1px solid #222; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; }
+        .footer-col h4 { color: #fff; margin-bottom: 25px; font-size: 1.2rem; border-left: 3px solid var(--primary); padding-left: 15px;}
+        .footer-col ul li { margin-bottom: 15px; }
+        .footer-col a { color: #888; transition: 0.3s; }
+        .footer-col a:hover { color: var(--primary); padding-left: 5px; }
+
+        /* --- FLOTANTES --- */
+        .float-whatsapp {
+            position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px;
+            background: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            font-size: 30px; color: #fff; z-index: 100; box-shadow: 0 0 20px rgba(37,211,102,0.5);
+            animation: pulseGreen 2s infinite;
+        }
+        @keyframes pulseGreen { 0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); } 70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); } 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); } }
+
+        @media (max-width: 768px) {
+            .hero-content h1 { font-size: 2.5rem; }
+            .nav-links { display: none; }
+            .navbar { justify-content: center; }
+            .comparison-wrapper { flex-direction: column-reverse; }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="preloader">
+        <div class="gauge-loader"><div class="gauge-fill"></div></div>
+        <div class="loading-text">CARGANDO MOTOR...</div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="logo">TALLERES <span>LORDEN</span></div>
+        <div class="nav-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#chapa">Chapa</a>
+            <a href="#contacto">Cita</a>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero">
+        <video class="video-bg" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1920">
+            <source src="https://videos.pexels.com/video-files/4488737/4488737-uhd_2560_1440_25fps.mp4" type="video/mp4">
+        </video>
+
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+            <div class="hero-badges">
+                <span class="badge">CASTROL SERVICE</span>
+                <span class="badge">PPG PAINTS</span>
+                <span class="badge">PREMIUM CARE</span>
+            </div>
+            <h1>TU COCHE <br>EN OTRA LIGA</h1>
+            <p style="font-size: 1.2rem; margin-bottom: 40px; color: #ddd;">
+                Ingeniería mecánica y acabados de precisión en Fuenlabrada.<br>
+                Donde la tecnología se une con la pasión.
+            </p>
+            <a href="#contacto" class="btn btn-primary">RESERVAR CITA</a>
+        </div>
+    </header>
+
+    <div class="stats-bar">
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="0">
+            <span class="stat-number" data-target="100">0</span>
+            <span class="stat-label">Fiabilidad</span>
+        </div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+            <span class="stat-number" data-target="100">0</span>
+            <span class="stat-label">Transparencia</span>
+        </div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+            <span class="stat-number" data-target="100">0</span>
+            <span class="stat-label">Satisfacción</span>
+        </div>
+    </div>
+
+    <section id="servicios" class="section-padding">
+        <div class="section-header" data-aos="fade-up">
+            <h2>SERVICIOS <span>ELITE</span></h2>
+            <p>Mantenimiento integral con estándares de concesionario oficial.</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card glass tilt-effect">
+                <i class="fas fa-cogs service-icon"></i>
+                <h3>Mecánica Avanzada</h3>
+                <p>Distribuciones, embragues y cajas de cambio. Soluciones complejas que otros talleres no se atreven a tocar.</p>
+            </div>
+            <div class="service-card glass tilt-effect">
+                <i class="fas fa-microchip service-icon"></i>
+                <h3>Diagnosis Digital</h3>
+                <p>Scanner de última generación para todas las marcas. Detectamos el fallo exacto sin dar palos de ciego.</p>
+            </div>
+            <div class="service-card glass tilt-effect">
+                <i class="fas fa-wind service-icon"></i>
+                <h3>Climatización</h3>
+                <p>Mantenimiento integral, cargas de gas y puesta a punto para tu confort.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="chapa" class="section-padding" style="background: #0f0f0f;">
+        <div class="section-header">
+            <h2>ARTE EN <span>CHAPA</span></h2>
+            <p>Devolvemos el brillo de fábrica a tu vehículo.</p>
+        </div>
+        
+        <div class="comparison-wrapper">
+            <div class="comparison-info" data-aos="fade-right">
+                <h3 style="color:var(--primary); margin-bottom: 30px;">Acabado Espejo Garantizado</h3>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Cabina presurizada (0 impurezas).</li>
+                    <li><i class="fas fa-check-circle"></i> Pinturas PPG base agua (Tecnología ecológica).</li>
+                    <li><i class="fas fa-check-circle"></i> Barniz cerámico de alta dureza.</li>
+                    <li><i class="fas fa-check-circle"></i> Trabajamos con TODAS las aseguradoras.</li>
+                </ul>
+                <a href="#contacto" class="btn btn-primary" style="margin-top: 30px; display:inline-block;">Pedir Peritaje</a>
+            </div>
+
+            <div class="img-comp-container" id="compareContainer" data-aos="zoom-in">
+                <div class="img-comp-img">
+                    <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">
+                </div>
+                <div class="img-comp-img img-comp-overlay">
+                    <img src="https://images.unsplash.com/photo-1507136566006-cfc505b114fc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact-section section-padding">
+        <div class="contact-overlay"></div>
+        <div class="contact-content">
+            <div class="section-header" style="width:100%; text-align:left;" data-aos="fade-down">
+                <h2>INICIA TU <span>REPARACIÓN</span></h2>
+                <p>Reserva cita en segundos. Confirmación directa a tu móvil.</p>
+            </div>
+
+            <div class="form-box glass" data-aos="fade-up">
+                <div class="input-group">
+                    <input type="text" id="w-nombre" placeholder="Tu Nombre Completo">
+                </div>
+                <div class="input-group">
+                    <select id="w-servicio" style="color: #aaa;">
+                        <option>Selecciona el servicio...</option>
+                        <option>Mecánica General</option>
+                        <option>Chapa y Pintura</option>
+                        <option>Revisión Mantenimiento</option>
+                        <option>Luz de Avería / Diagnosis</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <textarea id="w-mensaje" rows="4" placeholder="Describe tu coche y el problema (Ej: Audi A3, ruido en frenos...)"></textarea>
+                </div>
+                <button onclick="enviarWhatsApp()" class="btn btn-whatsapp">
+                    <i class="fab fa-whatsapp" style="font-size: 1.5rem;"></i> ENVIAR SOLICITUD AHORA
+                </button>
+                <p style="font-size: 0.8rem; margin-top: 15px; text-align: center;">* Te responderemos al instante en horario laboral.</p>
+            </div>
+
+            <div class="form-box" style="color: #fff;" data-aos="fade-left">
+                <h3 style="margin-bottom: 30px;">TALLERES LORDEN</h3>
+                <p style="margin-bottom: 20px; font-size: 1.1rem;"><i class="fas fa-map-marker-alt" style="color:var(--primary); width:30px;"></i> C. Teide, 4, 28944 Fuenlabrada</p>
+                <p style="margin-bottom: 20px; font-size: 1.1rem;"><i class="fas fa-phone-alt" style="color:var(--primary); width:30px;"></i> 624 13 03 34</p>
+                <p style="margin-bottom: 20px; font-size: 1.1rem;"><i class="fas fa-envelope" style="color:var(--primary); width:30px;"></i> tallereslorden@gmail.com</p>
+                
+                <div style="margin-top: 40px; border-radius: 15px; overflow: hidden; border: 1px solid var(--glass-border);">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3042.8273648604754!2d-3.791523923389053!3d40.27680197146261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418bc244ad4a41%3A0x65ebcbcae3e8d362!2sCastrol%20Service%20Auto%20talleres%20Lorden!5e0!3m2!1ses!2ses!4v1715000000000!5m2!1ses!2ses" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="logo">TALLERES <span>LORDEN</span></div>
+                <p style="margin-top: 20px; font-size: 0.9rem;">
+                    Elevando el estándar de la mecánica en Madrid Sur. Tecnología, honestidad y pasión.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>SERVICIOS</h4>
+                <ul>
+                    <li><a href="#">Mecánica General</a></li>
+                    <li><a href="#">Electrónica</a></li>
+                    <li><a href="#">Carrocería</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>LEGAL</h4>
+                <ul>
+                    <li><a href="#">Privacidad</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 50px; font-size: 0.8rem; color: #555;">
+            © 2024 Talleres Lorden. Designed for Performance.
+        </div>
+    </footer>
+
+    <a href="https://wa.me/34624130334?text=Hola,%20quiero%20cita" class="float-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true, offset: 100 });
+
+        window.addEventListener('load', () => {
+            const preloader = document.getElementById('preloader');
+            preloader.style.opacity = '0';
+            setTimeout(() => preloader.style.display = 'none', 600);
+        });
+
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) nav.classList.add('scrolled');
+            else nav.classList.remove('scrolled');
+        });
+
+        const cards = document.querySelectorAll('.tilt-effect');
+        cards.forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                const xPct = x / rect.width;
+                const yPct = y / rect.height;
+                const xRot = (yPct - 0.5) * 20;
+                const yRot = (xPct - 0.5) * -20;
+                card.style.transform = `perspective(1000px) rotateX(${xRot}deg) rotateY(${yRot}deg)`;
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)';
+            });
+        });
+
+        const counters = document.querySelectorAll('.stat-number');
+        const speed = 200;
+        const animateCounters = () => {
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+                    const inc = target / speed;
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + inc);
+                        setTimeout(updateCount, 20);
+                    } else {
+                        counter.innerText = target + (target >= 100 ? '%' : '+');
+                    }
+                };
+                updateCount();
+            });
+        };
+        let counted = false;
+        window.addEventListener('scroll', () => {
+            const section = document.querySelector('.stats-bar');
+            if (section.getBoundingClientRect().top < window.innerHeight && !counted) {
+                animateCounters();
+                counted = true;
+            }
+        });
+
+        function enviarWhatsApp() {
+            var nombre = document.getElementById("w-nombre").value;
+            var servicio = document.getElementById("w-servicio").value;
+            var mensaje = document.getElementById("w-mensaje").value;
+            if(nombre === "") nombre = "Cliente";
+            var texto = `Hola Talleres Lorden, soy ${nombre}.\nAsunto: ${servicio}.\nDetalles: ${mensaje}`;
+            window.open(`https://wa.me/34624130334?text=${encodeURIComponent(texto)}`, "_blank");
+        }
+
+        function initComparisons() {
+            var x, i; x = document.getElementsByClassName("img-comp-overlay");
+            for (i = 0; i < x.length; i++) { compareImages(x[i]); }
+            function compareImages(img) {
+                var slider, clicked = 0, w, h; w = img.offsetWidth; h = img.offsetHeight;
+                img.style.width = (w / 2) + "px";
+                slider = document.createElement("DIV"); slider.setAttribute("class", "slider-bar");
+                slider.innerHTML = "<div class='slider-button'><i class='fas fa-arrows-alt-h'></i></div>";
+                img.parentElement.insertBefore(slider, img);
+                slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+                slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+                slider.addEventListener("mousedown", slideReady); window.addEventListener("mouseup", slideFinish);
+                slider.addEventListener("touchstart", slideReady); window.addEventListener("touchend", slideFinish);
+                function slideReady(e) { e.preventDefault(); clicked = 1; window.addEventListener("mousemove", slideMove); window.addEventListener("touchmove", slideMove); }
+                function slideFinish() { clicked = 0; }
+                function slideMove(e) { if (clicked == 0) return false; var pos = getCursorPos(e); if (pos < 0) pos = 0; if (pos > w) pos = w; slide(pos); }
+                function getCursorPos(e) { var a, x = 0; e = (e.changedTouches) ? e.changedTouches[0] : e; a = img.getBoundingClientRect(); x = e.pageX - a.left; x = x - window.pageXOffset; return x; }
+                function slide(x) { img.style.width = x + "px"; slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px"; }
+            }
+        }
+        initComparisons();
+    </script>
+</body>
+</html>
