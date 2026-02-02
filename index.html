@@ -2,40 +2,28 @@
 <html lang="es" class="no-js">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
     <title>Talleres Lorden | Mecánica, Chapa y Pintura Premium en Fuenlabrada</title>
-    <meta name="description" content="Taller mecánico de referencia en Fuenlabrada. Especialistas en chapa y pintura, diagnosis electrónica, mantenimiento de flotas y restauración. Pide cita online.">
+    <meta name="description" content="Taller mecánico de referencia en Fuenlabrada. Especialistas en chapa y pintura, diagnosis electrónica, mantenimiento de flotas y restauración. Calidad garantizada.">
     <meta name="keywords" content="taller fuenlabrada, chapa y pintura madrid, mecanica general, taller barato, cambio aceite, itv fuenlabrada, taller de confianza, castrol service">
     <meta name="author" content="Talleres Lorden">
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <link rel="canonical" href="https://talleres-lorden.vercel.app/">
-    
-    <meta property="og:type" content="business.business">
-    <meta property="og:url" content="https://talleres-lorden.vercel.app/">
-    <meta property="og:title" content="Talleres Lorden | Tu Coche en Buenas Manos">
-    <meta property="og:description" content="Mecánica avanzada y acabados de pintura de fábrica. Reserva tu cita en 1 minuto.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1486262715619-01b8c2297605?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80">
-    <meta property="og:locale" content="es_ES">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Talleres Lorden | Fuenlabrada">
-    <meta name="twitter:description" content="Expertos en automoción. Calidad, garantía y rapidez.">
-    <meta name="twitter:image" content="https://images.unsplash.com/photo-1486262715619-01b8c2297605?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80">
-
+    <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#ff3b30">
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" type="image/png" href="https://img.icons8.com/fluency/48/000000/car-service.png">
+
+    <meta property="og:type" content="business.business">
+    <meta property="og:title" content="Talleres Lorden | Excelencia Automotriz">
+    <meta property="og:description" content="Ingeniería mecánica y acabados de precisión. Pide tu presupuesto personalizado.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1486262715619-01b8c2297605?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:url" content="https://talleres-lorden.vercel.app">
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "AutoRepair",
       "name": "Talleres Lorden",
-      "image": [
-        "https://images.unsplash.com/photo-1486262715619-01b8c2297605"
-       ],
+      "image": "https://images.unsplash.com/photo-1486262715619-01b8c2297605",
       "description": "Taller mecánico y de chapa y pintura en Fuenlabrada.",
       "address": {
         "@type": "PostalAddress",
@@ -50,158 +38,175 @@
         "latitude": 40.282,
         "longitude": -3.790
       },
-      "url": "https://talleres-lorden.vercel.app",
       "telephone": "+34624130334",
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          "opens": "09:00",
-          "closes": "18:00"
-        }
-      ],
+      "openingHours": "Mo-Fr 09:00-18:00",
       "priceRange": "$$"
     }
     </script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Russo+One&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Russo+One&family=Orbitron:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <style>
         /* =================================================================
-           1. CORE & RESET (Cimientos del diseño)
+           1. RESET CSS & VARIABLES (SISTEMA DE DISEÑO)
         ================================================================= */
         :root {
-            /* Paleta de Colores "Titan" */
-            --primary: #ff3b30;          /* Rojo Puro */
-            --primary-dark: #c41c1c;     /* Rojo Sangre */
-            --primary-glow: rgba(255, 59, 48, 0.6);
+            /* Colores Principales */
+            --color-primary: #ff3b30;
+            --color-primary-dark: #c41c1c;
+            --color-primary-glow: rgba(255, 59, 48, 0.4);
             
-            --bg-body: #050505;          /* Negro casi absoluto */
-            --bg-surface: #0f0f0f;       /* Gris muy oscuro */
-            --bg-card: rgba(255, 255, 255, 0.03);
+            /* Fondos */
+            --color-bg: #050505;
+            --color-bg-light: #0f0f0f;
+            --color-surface: #141414;
             
-            --text-main: #ffffff;
-            --text-muted: #a0a0a0;
-            --text-dark: #111111;
-
+            /* Textos */
+            --color-text-main: #ffffff;
+            --color-text-muted: #a0a0a0;
+            --color-text-dark: #000000;
+            
+            /* Bordes y Efectos */
             --border-glass: rgba(255, 255, 255, 0.08);
-            --glass-blur: blur(20px);
-
-            /* Dimensiones */
-            --nav-height: 90px;
+            --border-active: rgba(255, 59, 48, 0.8);
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-blur: blur(15px);
+            
+            /* Espaciados y Dimensiones */
             --container-width: 1280px;
+            --nav-height: 90px;
+            --section-spacing: 120px;
             
             /* Animaciones */
-            --ease-out: cubic-bezier(0.215, 0.61, 0.355, 1);
-            --bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            --ease-smooth: cubic-bezier(0.23, 1, 0.32, 1);
+            --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
         }
 
-        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        /* Reset Básico */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; outline: none; }
+        html { font-size: 16px; scroll-behavior: smooth; cursor: none; } /* Cursor oculto para custom */
         
-        html {
-            font-size: 16px;
-            scroll-behavior: smooth;
-            cursor: none; /* Ocultamos cursor por defecto para usar el custom */
-        }
-
         body {
             font-family: 'Montserrat', sans-serif;
-            background-color: var(--bg-body);
-            color: var(--text-main);
+            background-color: var(--color-bg);
+            color: var(--color-text-main);
             line-height: 1.7;
             overflow-x: hidden;
             position: relative;
         }
 
-        ::selection { background: var(--primary); color: #fff; }
+        /* Tipografía */
+        h1, h2, h3, h4, h5, h6 { font-family: 'Russo One', sans-serif; text-transform: uppercase; letter-spacing: 1px; line-height: 1.1; margin-bottom: 1rem; }
+        p { color: var(--color-text-muted); margin-bottom: 1.5rem; font-weight: 300; }
+        a { text-decoration: none; color: inherit; transition: all 0.3s ease; }
+        ul { list-style: none; }
+        img { max-width: 100%; display: block; object-fit: cover; }
+
+        /* Scrollbar Personalizada */
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #000; }
         ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: var(--primary); }
+        ::-webkit-scrollbar-thumb:hover { background: var(--color-primary); }
 
-        /* Tipografía */
-        h1, h2, h3, h4, h5 { font-family: 'Russo One', sans-serif; text-transform: uppercase; letter-spacing: 1px; line-height: 1.1; }
-        .text-gradient { background: linear-gradient(135deg, #fff 0%, #aaa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .text-primary { color: var(--primary); }
-
-        /* Cursor Personalizado */
-        .cursor-dot, .cursor-outline { position: fixed; top: 0; left: 0; transform: translate(-50%, -50%); border-radius: 50%; z-index: 9999; pointer-events: none; }
-        .cursor-dot { width: 8px; height: 8px; background-color: var(--primary); }
-        .cursor-outline { width: 40px; height: 40px; border: 2px solid rgba(255, 59, 48, 0.5); transition: width 0.2s, height 0.2s, background-color 0.2s; }
-        
-        /* Efecto Hover Cursor */
-        body.hovering .cursor-outline { width: 70px; height: 70px; background-color: rgba(255, 59, 48, 0.1); border-color: var(--primary); }
-
-        /* =================================================================
-           2. COMPONENTES UI (Botones, Tarjetas, Inputs)
-        ================================================================= */
+        /* Utilidades */
         .container { max-width: var(--container-width); margin: 0 auto; padding: 0 25px; }
-        .section-padding { padding: 120px 0; position: relative; }
+        .section-padding { padding: var(--section-spacing) 0; position: relative; }
+        .text-primary { color: var(--color-primary); }
+        .hidden { display: none !important; }
+        .flex-center { display: flex; align-items: center; justify-content: center; }
         
-        /* Efecto Cristal */
+        /* Efecto Cristal (Glassmorphism) Global */
         .glass-panel {
-            background: var(--bg-card);
+            background: var(--glass-bg);
             backdrop-filter: var(--glass-blur);
             -webkit-backdrop-filter: var(--glass-blur);
             border: 1px solid var(--border-glass);
             border-radius: 20px;
         }
 
-        /* Botones Titan */
-        .btn {
-            display: inline-flex; align-items: center; justify-content: center; gap: 10px;
-            padding: 18px 40px; font-size: 0.9rem; font-weight: 700; text-transform: uppercase;
-            border-radius: 50px; border: none; cursor: none; /* Cursor manejado por JS */
-            position: relative; overflow: hidden; transition: all 0.4s var(--ease-out); z-index: 1;
+        /* =================================================================
+           2. CURSOR PERSONALIZADO & ANIMACIONES
+        ================================================================= */
+        .cursor-dot {
+            width: 8px; height: 8px; background: var(--color-primary); position: fixed; top: 0; left: 0;
+            border-radius: 50%; z-index: 9999; pointer-events: none; transform: translate(-50%, -50%);
+        }
+        .cursor-outline {
+            width: 40px; height: 40px; border: 2px solid rgba(255, 59, 48, 0.5); position: fixed; top: 0; left: 0;
+            border-radius: 50%; z-index: 9999; pointer-events: none; transform: translate(-50%, -50%);
+            transition: width 0.2s, height 0.2s, background-color 0.2s;
+        }
+        body.hovering .cursor-outline {
+            width: 70px; height: 70px; background: rgba(255, 59, 48, 0.1); border-color: var(--color-primary);
         }
         
-        .btn-primary { background: var(--primary); color: #fff; box-shadow: 0 0 20px var(--primary-glow); }
-        .btn-primary::after {
-            content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
-            transition: 0.5s;
+        /* Restaurar cursor en móvil */
+        @media (hover: none) {
+            html { cursor: auto; }
+            .cursor-dot, .cursor-outline { display: none; }
         }
-        .btn-primary:hover::after { left: 100%; }
-        .btn-primary:hover { transform: translateY(-5px); box-shadow: 0 10px 40px var(--primary-glow); }
 
-        /* Botón Email (Blanco) */
-        .btn-white {
-            background: #ffffff; color: #000; border: 1px solid #fff;
-            box-shadow: 0 5px 15px rgba(255,255,255,0.1);
+        /* Animación Glitch Texto */
+        .glitch-text {
+            position: relative; color: #fff; font-size: clamp(2.5rem, 6vw, 5.5rem); font-weight: 900;
         }
-        .btn-white:hover { background: #e0e0e0; transform: translateY(-3px); }
-
-        /* Botón WhatsApp */
-        .btn-whatsapp-full { background: #25d366; color: #fff; width: 100%; margin-bottom: 15px; }
-        .btn-whatsapp-full:hover { background: #1ebc57; box-shadow: 0 5px 20px rgba(37, 211, 102, 0.3); }
-
-        /* Títulos de Sección */
-        .section-header { text-align: center; margin-bottom: 80px; position: relative; }
-        .section-header h2 { font-size: 3rem; margin-bottom: 20px; }
-        .section-header span { color: var(--primary); position: relative; display: inline-block; }
-        .section-header span::after {
-            content: ''; position: absolute; width: 100%; height: 10px;
-            background: var(--primary); bottom: 5px; left: 0; z-index: -1; opacity: 0.3; transform: skewX(-15deg);
+        .glitch-text::before, .glitch-text::after {
+            content: attr(data-text); position: absolute; top: 0; left: 0; width: 100%; height: 100%;
         }
-        .section-subtitle { font-family: 'Orbitron', sans-serif; color: var(--primary); letter-spacing: 3px; font-size: 0.9rem; margin-bottom: 10px; display: block; }
+        .glitch-text::before { left: 2px; text-shadow: -1px 0 #00ffff; clip: rect(24px, 550px, 90px, 0); animation: glitch-anim-2 3s infinite linear alternate-reverse; }
+        .glitch-text::after { left: -2px; text-shadow: -1px 0 #ff00ff; clip: rect(85px, 550px, 140px, 0); animation: glitch-anim 2.5s infinite linear alternate-reverse; }
+        
+        @keyframes glitch-anim { 0% { clip: rect(11px, 9999px, 81px, 0); } 100% { clip: rect(76px, 9999px, 11px, 0); } }
+        @keyframes glitch-anim-2 { 0% { clip: rect(59px, 9999px, 16px, 0); } 100% { clip: rect(2px, 9999px, 79px, 0); } }
 
         /* =================================================================
-           3. NAVBAR & MENU & LOADER
+           3. COMPONENTES UI (BOTONES, TARJETAS)
+        ================================================================= */
+        .btn {
+            display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+            padding: 18px 45px; font-size: 0.9rem; font-weight: 700; text-transform: uppercase;
+            border-radius: 50px; border: none; cursor: pointer; position: relative; overflow: hidden;
+            z-index: 1; transition: all 0.4s var(--ease-smooth); letter-spacing: 1px;
+        }
+        
+        .btn-primary { background: var(--color-primary); color: #fff; box-shadow: 0 10px 30px -5px var(--color-primary-glow); }
+        .btn-primary::after {
+            content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent); transition: 0.5s;
+        }
+        .btn-primary:hover::after { left: 100%; }
+        .btn-primary:hover { transform: translateY(-5px); box-shadow: 0 15px 40px var(--color-primary-glow); }
+
+        .btn-white { background: #fff; color: #000; box-shadow: 0 5px 15px rgba(255,255,255,0.1); }
+        .btn-white:hover { background: #f0f0f0; transform: translateY(-3px); }
+
+        .btn-outline { background: transparent; border: 2px solid rgba(255,255,255,0.2); color: #fff; }
+        .btn-outline:hover { border-color: var(--color-primary); color: var(--color-primary); }
+
+        /* Section Header */
+        .section-header { text-align: center; margin-bottom: 80px; }
+        .section-subtitle { font-family: 'Orbitron', sans-serif; color: var(--color-primary); letter-spacing: 3px; font-size: 0.85rem; display: block; margin-bottom: 15px; }
+        .section-header h2 { font-size: 3rem; margin-bottom: 20px; }
+        .section-header p { max-width: 650px; margin: 0 auto; font-size: 1.1rem; }
+
+        /* =================================================================
+           4. PRELOADER & NAVBAR
         ================================================================= */
         #preloader {
             position: fixed; inset: 0; background: #000; z-index: 10000;
             display: flex; flex-direction: column; align-items: center; justify-content: center;
             transition: opacity 0.8s ease, visibility 0.8s ease;
         }
-        .loader-logo { font-family: 'Russo One'; font-size: 2.5rem; color: #fff; margin-bottom: 20px; animation: pulse 2s infinite; }
-        .loader-bar { width: 200px; height: 4px; background: #222; border-radius: 4px; overflow: hidden; }
-        .loader-fill { width: 0%; height: 100%; background: var(--primary); animation: load 2s ease-in-out forwards; }
-        @keyframes load { 100% { width: 100%; } }
-        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+        .loader-ring {
+            width: 80px; height: 80px; border: 4px solid rgba(255,255,255,0.1);
+            border-top: 4px solid var(--color-primary); border-radius: 50%;
+            animation: spin 1s linear infinite; margin-bottom: 20px;
+        }
+        @keyframes spin { 100% { transform: rotate(360deg); } }
 
         .navbar {
             position: fixed; top: 0; width: 100%; height: var(--nav-height);
@@ -210,207 +215,217 @@
             background: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%, transparent 100%);
         }
         .navbar.scrolled {
-            background: rgba(10, 10, 10, 0.95);
-            backdrop-filter: blur(15px);
-            border-bottom: 1px solid var(--border-glass);
-            height: 80px;
+            background: rgba(10, 10, 10, 0.98); backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-glass); height: 80px;
         }
-        .logo { font-size: 1.8rem; font-weight: 700; color: #fff; display: flex; align-items: center; gap: 10px; letter-spacing: -1px; }
-        .logo i { color: var(--primary); font-size: 1.5rem; filter: drop-shadow(0 0 5px var(--primary)); }
+        .logo { font-size: 1.6rem; font-weight: 800; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .logo span { color: var(--color-primary); }
 
-        .nav-links { display: flex; gap: 35px; }
-        .nav-item { position: relative; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: #ccc; transition: 0.3s; cursor: none; }
+        .nav-links { display: flex; gap: 40px; }
+        .nav-item { 
+            position: relative; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; 
+            color: #ccc; cursor: pointer; transition: 0.3s;
+        }
         .nav-item:hover, .nav-item.active { color: #fff; }
-        .nav-item::before { content: ''; position: absolute; bottom: -5px; left: 0; width: 0; height: 2px; background: var(--primary); transition: 0.3s; }
+        .nav-item::before {
+            content: ''; position: absolute; bottom: -5px; left: 0; width: 0;
+            height: 2px; background: var(--color-primary); transition: 0.3s;
+        }
         .nav-item:hover::before { width: 100%; }
 
-        .mobile-toggle { display: none; font-size: 1.8rem; cursor: pointer; }
+        /* Menú Móvil */
+        .mobile-toggle { display: none; font-size: 1.8rem; cursor: pointer; color: #fff; }
+        .mobile-menu-overlay {
+            position: fixed; inset: 0; background: #000; z-index: 999;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            transform: translateY(-100%); transition: transform 0.4s var(--ease-smooth);
+        }
+        .mobile-menu-overlay.open { transform: translateY(0); }
+        .mobile-link { font-size: 2rem; margin: 15px 0; font-family: var(--font-title); color: #fff; transition: 0.3s; }
+        .mobile-link:hover { color: var(--color-primary); }
+        .close-menu { position: absolute; top: 30px; right: 30px; font-size: 2rem; cursor: pointer; }
 
         /* =================================================================
-           4. HERO SECTION (Video & Glitch)
+           5. HERO SECTION
         ================================================================= */
-        .hero { height: 100vh; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; padding-top: var(--nav-height); }
-        .video-bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; filter: brightness(0.35) contrast(1.1); }
-        .hero-overlay { position: absolute; inset: 0; background: radial-gradient(circle at center, transparent 0%, #000 120%); z-index: 0; }
+        .hero {
+            height: 100vh; position: relative; display: flex; align-items: center; justify-content: center;
+            padding-top: var(--nav-height); text-align: center; overflow: hidden;
+        }
+        .video-bg {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;
+            z-index: -1; filter: brightness(0.4) contrast(1.1);
+        }
+        .hero-overlay { position: absolute; inset: 0; background: radial-gradient(circle at center, transparent 0%, #050505 100%); z-index: 0; }
         
-        .hero-content { position: relative; z-index: 2; text-align: center; max-width: 1000px; padding: 0 20px; }
+        .hero-content { position: relative; z-index: 2; max-width: 1000px; padding: 0 20px; }
         
-        .badge-container { display: flex; justify-content: center; gap: 15px; margin-bottom: 30px; flex-wrap: wrap; }
+        .badges-container { display: flex; justify-content: center; gap: 15px; margin-bottom: 40px; }
         .hero-badge {
             background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
-            padding: 8px 16px; border-radius: 30px; font-size: 0.75rem; font-weight: 700;
-            text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(5px); display: flex; align-items: center; gap: 8px;
+            padding: 10px 20px; border-radius: 30px; font-size: 0.8rem; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 1px; backdrop-filter: blur(10px);
+            display: flex; align-items: center; gap: 8px;
         }
-        .hero-badge i { color: var(--primary); }
+        .hero-badge i { color: var(--color-primary); }
 
-        /* Efecto Glitch en Texto */
-        .glitch-text {
-            font-size: clamp(3rem, 6vw, 6rem); line-height: 1; font-weight: 900; color: #fff; position: relative; margin-bottom: 25px;
-            text-shadow: 0 0 20px rgba(0,0,0,0.5);
+        .hero-btns { margin-top: 50px; display: flex; gap: 20px; justify-content: center; }
+
+        .scroll-down {
+            position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);
+            animation: bounce 2s infinite; opacity: 0.7; font-size: 1.5rem; color: #fff;
         }
-        .glitch-text::before, .glitch-text::after {
-            content: attr(data-text); position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.8;
-        }
-        .glitch-text::before { color: #0ff; z-index: -1; animation: glitch-anim-1 2.5s infinite linear alternate-reverse; }
-        .glitch-text::after { color: #f0f; z-index: -2; animation: glitch-anim-2 3s infinite linear alternate-reverse; }
-        
-        @keyframes glitch-anim-1 { 0% { clip-path: inset(20% 0 80% 0); transform: translate(-2px, 1px); } 100% { clip-path: inset(60% 0 10% 0); transform: translate(2px, -1px); } }
-        @keyframes glitch-anim-2 { 0% { clip-path: inset(10% 0 60% 0); transform: translate(2px, 1px); } 100% { clip-path: inset(80% 0 5% 0); transform: translate(-2px, -1px); } }
+        @keyframes bounce { 0%, 20%, 50%, 80%, 100% {transform: translateX(-50%) translateY(0);} 40% {transform: translateX(-50%) translateY(-10px);} 60% {transform: translateX(-50%) translateY(-5px);} }
 
         /* =================================================================
-           5. ESTADÍSTICAS & SERVICIOS
+           6. SECCIONES: STATS, SERVICIOS, MARCAS
         ================================================================= */
-        .stats-section { background: #0b0b0b; border-bottom: 1px solid #1a1a1a; padding: 60px 0; }
-        .stats-wrapper { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; text-align: center; }
-        .stat-card h3 { font-size: 3.5rem; color: var(--primary); margin-bottom: 5px; font-family: 'Orbitron'; }
-        .stat-card p { font-size: 0.9rem; text-transform: uppercase; color: #888; letter-spacing: 1px; }
+        /* Stats */
+        .stats-section { background: #0b0b0b; border-bottom: 1px solid #1a1a1a; padding: 80px 0; }
+        .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; text-align: center; }
+        .stat-card h3 { font-size: 4rem; color: var(--color-primary); margin: 0; font-family: 'Orbitron'; line-height: 1; }
+        .stat-card p { font-size: 0.9rem; text-transform: uppercase; color: #888; letter-spacing: 2px; margin-top: 10px; }
 
-        .services-section { background: var(--bg-body); }
-        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; perspective: 1000px; }
-        
-        .service-card {
-            padding: 50px 30px; text-align: center; transition: all 0.5s var(--ease-out);
-            position: relative; overflow: hidden; transform-style: preserve-3d;
-            border-bottom: 2px solid transparent;
+        /* Marquee de Marcas */
+        .brands-section { background: #000; padding: 40px 0; border-bottom: 1px solid #222; overflow: hidden; white-space: nowrap; }
+        .brands-track { display: inline-block; animation: scrollBrands 30s linear infinite; }
+        .brand-item {
+            display: inline-block; margin: 0 40px; font-size: 1.5rem; font-weight: 800;
+            color: #333; text-transform: uppercase; font-family: 'Russo One';
         }
-        .service-card:hover { transform: translateY(-10px); background: rgba(255,255,255,0.02); border-bottom-color: var(--primary); }
-        
-        .icon-box {
-            width: 90px; height: 90px; background: rgba(255,255,255,0.03); border-radius: 50%;
-            display: flex; align-items: center; justify-content: center; margin: 0 auto 30px;
-            font-size: 2.5rem; color: var(--primary); border: 1px solid rgba(255,255,255,0.05);
+        @keyframes scrollBrands { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+        /* Servicios Grid */
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; }
+        .service-card {
+            padding: 50px 40px; text-align: center; transition: all 0.5s var(--ease-smooth);
+            position: relative; overflow: hidden; min-height: 400px; display: flex; flex-direction: column; justify-content: center; align-items: center;
+        }
+        .service-card:hover { transform: translateY(-10px); border-color: var(--color-primary); box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
+        .service-icon {
+            font-size: 3rem; color: var(--color-primary); margin-bottom: 30px;
+            width: 100px; height: 100px; background: rgba(255,255,255,0.03); border-radius: 50%;
+            display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.05);
             transition: 0.5s;
         }
-        .service-card:hover .icon-box { background: var(--primary); color: #fff; transform: rotateY(360deg); box-shadow: 0 0 30px var(--primary-glow); }
-        
-        .service-features { margin-top: 25px; text-align: left; padding-top: 25px; border-top: 1px solid rgba(255,255,255,0.05); }
-        .service-features li { margin-bottom: 12px; color: #bbb; display: flex; align-items: center; gap: 10px; font-size: 0.9rem; }
-        .service-features i { color: var(--primary); font-size: 0.8rem; }
+        .service-card:hover .service-icon { background: var(--color-primary); color: #fff; transform: rotateY(360deg); }
+        .service-link {
+            margin-top: 25px; color: #fff; font-size: 0.9rem; font-weight: 600;
+            border-bottom: 1px solid var(--color-primary); padding-bottom: 2px; cursor: pointer;
+        }
 
         /* =================================================================
-           6. CALCULADORA DE PRESUPUESTO (FEATURE NUEVA)
-        ================================================================= */
-        .calculator-section { background: #0f0f0f; position: relative; overflow: hidden; }
-        .calc-container { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
-        
-        .calc-form { padding: 40px; }
-        .calc-group { margin-bottom: 25px; }
-        .calc-group label { display: block; margin-bottom: 10px; font-weight: 600; color: #ccc; font-size: 0.9rem; }
-        .calc-select {
-            width: 100%; padding: 15px; background: #000; border: 1px solid #333; color: #fff;
-            border-radius: 10px; font-family: inherit; cursor: pointer; transition: 0.3s;
-        }
-        .calc-select:focus { border-color: var(--primary); outline: none; box-shadow: 0 0 15px rgba(255,59,48,0.2); }
-        
-        .price-display {
-            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-            padding: 40px; border-radius: 20px; text-align: center; color: #fff;
-            box-shadow: 0 20px 50px rgba(255,59,48,0.3); position: relative;
-        }
-        .price-display h4 { font-size: 1.2rem; margin-bottom: 10px; opacity: 0.9; }
-        .price-tag { font-size: 4rem; font-family: 'Russo One'; line-height: 1; }
-        .price-note { font-size: 0.8rem; opacity: 0.7; margin-top: 10px; }
-
-        /* =================================================================
-           7. GALERÍA FILTRABLE (PORTFOLIO)
+           7. GALERÍA (LIGHTBOX)
         ================================================================= */
         .gallery-nav { display: flex; justify-content: center; gap: 15px; margin-bottom: 40px; flex-wrap: wrap; }
         .gallery-btn {
-            background: transparent; border: 1px solid rgba(255,255,255,0.2); color: #fff;
-            padding: 10px 25px; border-radius: 30px; cursor: pointer; transition: 0.3s; font-weight: 600;
+            background: transparent; border: 1px solid #333; color: #fff; padding: 10px 30px;
+            border-radius: 30px; cursor: pointer; font-weight: 600; transition: 0.3s;
         }
-        .gallery-btn.active, .gallery-btn:hover { background: var(--primary); border-color: var(--primary); }
+        .gallery-btn.active, .gallery-btn:hover { background: var(--color-primary); border-color: var(--color-primary); }
         
         .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
         .gallery-item {
-            height: 250px; border-radius: 12px; overflow: hidden; position: relative; cursor: pointer;
-            border: 1px solid rgba(255,255,255,0.05);
+            height: 300px; border-radius: 15px; overflow: hidden; position: relative; cursor: zoom-in;
+            border: 1px solid rgba(255,255,255,0.1);
         }
-        .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
+        .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: 0.6s; }
         .gallery-overlay {
-            position: absolute; inset: 0; background: rgba(0,0,0,0.7); display: flex;
+            position: absolute; inset: 0; background: rgba(0,0,0,0.6); display: flex;
             align-items: center; justify-content: center; opacity: 0; transition: 0.3s;
         }
         .gallery-overlay i { font-size: 2rem; color: #fff; transform: scale(0); transition: 0.3s; }
         .gallery-item:hover img { transform: scale(1.1); }
         .gallery-item:hover .gallery-overlay { opacity: 1; }
         .gallery-item:hover .gallery-overlay i { transform: scale(1); }
-        .gallery-item.hidden { display: none; }
+
+        /* Lightbox Modal */
+        .lightbox {
+            position: fixed; inset: 0; background: rgba(0,0,0,0.95); z-index: 12000;
+            display: flex; justify-content: center; align-items: center; opacity: 0; pointer-events: none; transition: 0.3s;
+        }
+        .lightbox.active { opacity: 1; pointer-events: all; }
+        .lightbox img { max-height: 90vh; max-width: 90vw; border-radius: 10px; box-shadow: 0 0 50px rgba(0,0,0,0.8); }
+        .lightbox-close { position: absolute; top: 30px; right: 30px; font-size: 2.5rem; color: #fff; cursor: pointer; }
 
         /* =================================================================
-           8. CONTACTO & FORMULARIO
+           8. CONTACTO (SIN PRECIOS)
         ================================================================= */
-        .contact-section { background: url('https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') fixed center/cover; }
-        .contact-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.85); backdrop-filter: blur(5px); }
+        .contact-section { background: url('https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') center/cover fixed; }
+        .contact-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.9); }
         .contact-wrapper { position: relative; z-index: 2; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; }
         
-        .form-container { padding: 40px; }
-        .input-wrapper { position: relative; margin-bottom: 25px; }
-        .input-wrapper input, .input-wrapper textarea, .input-wrapper select {
-            width: 100%; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
-            padding: 16px 20px; border-radius: 8px; color: #fff; font-family: inherit; transition: 0.3s;
+        .form-container { padding: 50px; }
+        .form-title { margin-bottom: 30px; }
+        .form-title h3 { font-size: 2rem; margin-bottom: 10px; }
+        
+        .input-group { margin-bottom: 25px; position: relative; }
+        .input-group label {
+            position: absolute; left: 20px; top: 18px; color: #888; pointer-events: none;
+            transition: 0.3s; font-size: 0.9rem; background: #141414; padding: 0 5px;
         }
-        .input-wrapper label {
-            position: absolute; left: 20px; top: 16px; color: #888; pointer-events: none; transition: 0.3s; font-size: 0.9rem;
+        .input-field {
+            width: 100%; background: #141414; border: 1px solid #333; padding: 18px 20px;
+            border-radius: 10px; color: #fff; font-family: inherit; font-size: 1rem; transition: 0.3s;
         }
-        .input-wrapper input:focus, .input-wrapper textarea:focus, .input-wrapper select:focus {
-            border-color: var(--primary); background: rgba(0,0,0,0.6); outline: none;
+        .input-field:focus { border-color: var(--color-primary); outline: none; }
+        .input-field:focus ~ label, .input-field:not(:placeholder-shown) ~ label {
+            top: -10px; left: 15px; font-size: 0.8rem; color: var(--color-primary);
         }
-        .input-wrapper input:focus ~ label,
-        .input-wrapper input:not(:placeholder-shown) ~ label,
-        .input-wrapper textarea:focus ~ label,
-        .input-wrapper textarea:not(:placeholder-shown) ~ label {
-            top: -10px; left: 10px; font-size: 0.75rem; color: var(--primary); background: #000; padding: 0 5px;
-        }
+        .error-message { color: var(--color-primary); font-size: 0.8rem; margin-top: 5px; display: none; }
 
-        /* Footer */
-        footer { background: #050505; border-top: 1px solid #222; padding-top: 80px; color: #888; }
-        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.5fr; gap: 40px; margin-bottom: 60px; }
-        .footer-logo { color: #fff; font-size: 1.5rem; font-weight: 800; margin-bottom: 20px; display: block; }
-        .footer-logo span { color: var(--primary); }
-        .footer-title { color: #fff; font-size: 1.1rem; margin-bottom: 25px; border-left: 3px solid var(--primary); padding-left: 15px; }
-        .footer-links li { margin-bottom: 12px; }
-        .footer-links a { transition: 0.3s; }
-        .footer-links a:hover { color: var(--primary); padding-left: 5px; }
-        .copyright { text-align: center; padding: 30px; border-top: 1px solid #111; font-size: 0.85rem; }
+        /* Botones de Contacto */
+        .contact-btns { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px; }
+        .btn-whatsapp-full { background: #25d366; color: #fff; width: 100%; border-radius: 10px; }
+        .btn-email-full { background: #fff; color: #000; width: 100%; border-radius: 10px; }
 
-        /* Modales (Legal) */
-        .modal-overlay {
-            position: fixed; inset: 0; background: rgba(0,0,0,0.9); z-index: 11000;
-            display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: 0.3s;
+        /* =================================================================
+           9. FOOTER & EXTRAS
+        ================================================================= */
+        footer { background: #020202; border-top: 1px solid #222; padding: 80px 0 30px; font-size: 0.95rem; color: #999; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.5fr; gap: 50px; margin-bottom: 60px; }
+        .footer-logo { font-size: 1.8rem; color: #fff; font-weight: 800; margin-bottom: 20px; display: inline-block; }
+        .footer-logo span { color: var(--color-primary); }
+        .footer-links li { margin-bottom: 15px; }
+        .footer-links a:hover { color: var(--color-primary); padding-left: 5px; }
+        .footer-contact li { display: flex; gap: 15px; margin-bottom: 20px; }
+        .footer-contact i { color: var(--color-primary); font-size: 1.2rem; margin-top: 3px; }
+        
+        .copyright { text-align: center; border-top: 1px solid #222; padding-top: 30px; font-size: 0.85rem; }
+
+        /* Modales de Servicio (Popups) */
+        .service-modal {
+            position: fixed; inset: 0; background: rgba(0,0,0,0.95); z-index: 11000;
+            display: flex; justify-content: center; align-items: center; opacity: 0; pointer-events: none; transition: 0.4s;
         }
-        .modal-overlay.active { opacity: 1; pointer-events: all; }
-        .modal-box {
-            width: 90%; max-width: 600px; background: #111; border: 1px solid var(--border-glass);
-            border-radius: 15px; padding: 40px; position: relative; max-height: 80vh; overflow-y: auto;
-            transform: translateY(50px); transition: 0.4s;
+        .service-modal.active { opacity: 1; pointer-events: all; }
+        .service-modal-content {
+            background: #111; padding: 50px; border-radius: 20px; max-width: 700px; width: 90%;
+            position: relative; border: 1px solid var(--border-glass); transform: translateY(50px); transition: 0.4s;
         }
-        .modal-overlay.active .modal-box { transform: translateY(0); }
-        .close-modal { position: absolute; top: 20px; right: 20px; font-size: 1.5rem; cursor: pointer; color: #fff; }
-        .modal-content h3 { color: var(--primary); margin-bottom: 20px; }
-        .modal-content p { font-size: 0.9rem; margin-bottom: 15px; color: #ccc; }
+        .service-modal.active .service-modal-content { transform: translateY(0); }
+        .modal-close { position: absolute; top: 20px; right: 20px; font-size: 2rem; cursor: pointer; color: #fff; }
+        .modal-list li { margin-bottom: 10px; border-bottom: 1px solid #222; padding-bottom: 10px; display: flex; justify-content: space-between; }
 
         /* Botones Flotantes */
-        .float-btn {
-            position: fixed; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
-            font-size: 1.8rem; color: #fff; z-index: 900; box-shadow: 0 5px 20px rgba(0,0,0,0.4); transition: 0.3s;
-        }
-        .float-btn:hover { transform: scale(1.1); }
-        .float-wa { bottom: 30px; right: 30px; background: #25d366; }
-        .float-up { bottom: 30px; right: 110px; background: #333; opacity: 0; pointer-events: none; }
-        .float-up.visible { opacity: 1; pointer-events: all; }
+        .float-wa { position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; background: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: #fff; z-index: 990; box-shadow: 0 4px 15px rgba(0,0,0,0.5); transition: 0.3s; }
+        .float-wa:hover { transform: scale(1.1); }
 
-        /* RESPONSIVE */
+        /* Responsive */
         @media (max-width: 1024px) {
             .hero h1 { font-size: 3.5rem; }
             .nav-links { display: none; }
-            .mobile-toggle { display: block; color: #fff; }
-            .stats-wrapper, .calc-container, .contact-wrapper, .footer-grid { grid-template-columns: 1fr; gap: 40px; }
-            .price-display { margin-top: 30px; }
-            .timeline-item { width: 100%; padding-left: 70px; padding-right: 0; }
-            .timeline-item::after { left: 20px; }
-            .timeline::after { left: 30px; }
-            .left, .right { text-align: left; }
+            .mobile-toggle { display: block; }
+            .stats-grid { grid-template-columns: 1fr 1fr; }
+            .contact-wrapper { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; text-align: center; }
+            .footer-contact li { justify-content: center; }
+            .contact-btns { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 600px) {
+            .stats-grid { grid-template-columns: 1fr; }
+            .hero-btns { flex-direction: column; width: 100%; }
+            .btn { width: 100%; }
         }
     </style>
 </head>
@@ -420,25 +435,34 @@
     <div class="cursor-outline"></div>
 
     <div id="preloader">
-        <div class="loader-logo">LORDEN</div>
-        <div class="loader-bar"><div class="loader-fill"></div></div>
+        <div class="loader-ring"></div>
+        <div style="letter-spacing: 3px; font-weight: 800; font-size: 1.2rem;">CARGANDO SISTEMA...</div>
     </div>
 
     <nav class="navbar">
         <div class="container" style="display:flex; justify-content:space-between; width:100%; align-items:center;">
             <a href="#" class="logo">
-                <i class="fas fa-wrench"></i> TALLERES LORDEN
+                <i class="fas fa-wrench"></i> TALLERES<span>LORDEN</span>
             </a>
             <ul class="nav-links">
-                <li><a href="#inicio" class="nav-item active">Inicio</a></li>
+                <li><a href="#inicio" class="nav-item">Inicio</a></li>
                 <li><a href="#servicios" class="nav-item">Servicios</a></li>
-                <li><a href="#calculadora" class="nav-item" style="color:var(--primary)">Calculadora</a></li>
+                <li><a href="#proceso" class="nav-item">Método</a></li>
                 <li><a href="#galeria" class="nav-item">Proyectos</a></li>
-                <li><a href="#contacto" class="nav-item">Contacto</a></li>
+                <li><a href="#contacto" class="nav-item active" style="color:var(--color-primary)">Pedir Cita</a></li>
             </ul>
             <div class="mobile-toggle"><i class="fas fa-bars"></i></div>
         </div>
     </nav>
+
+    <div class="mobile-menu-overlay">
+        <a href="#inicio" class="mobile-link">Inicio</a>
+        <a href="#servicios" class="mobile-link">Servicios Integrales</a>
+        <a href="#proceso" class="mobile-link">Cómo Trabajamos</a>
+        <a href="#galeria" class="mobile-link">Galería</a>
+        <a href="#contacto" class="mobile-link" style="color:var(--color-primary)">Solicitar Presupuesto</a>
+        <div class="close-menu"><i class="fas fa-times"></i></div>
+    </div>
 
     <header id="inicio" class="hero">
         <video class="video-bg" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1920">
@@ -447,144 +471,130 @@
         <div class="hero-overlay"></div>
         
         <div class="hero-content">
-            <div class="badge-container" data-aos="fade-down">
-                <span class="hero-badge"><i class="fas fa-certificate"></i> Garantía Oficial</span>
-                <span class="hero-badge"><i class="fas fa-spray-can"></i> Pintura PPG</span>
-                <span class="hero-badge"><i class="fas fa-star"></i> 4.5/5 en Google</span>
+            <div class="badges-container">
+                <span class="hero-badge"><i class="fas fa-certificate"></i> Taller Certificado</span>
+                <span class="hero-badge"><i class="fas fa-award"></i> Calidad Premium</span>
+                <span class="hero-badge"><i class="fas fa-star"></i> 4.9/5 Clientes</span>
             </div>
             
-            <h1 class="glitch-text" data-text="MECÁNICA & PRECISIÓN" data-aos="zoom-in">MECÁNICA & PRECISIÓN</h1>
-            <p style="font-size: 1.25rem; margin-bottom: 40px; color: #ddd; max-width: 800px; margin-left: auto; margin-right: auto;" data-aos="fade-up" data-aos-delay="200">
-                El taller de referencia en el sur de Madrid. Soluciones integrales para vehículos de todas las gamas con tecnología de concesionario.
+            <h1 class="glitch-text" data-text="INGENIERÍA AUTOMOTRIZ">INGENIERÍA AUTOMOTRIZ</h1>
+            <p style="font-size: 1.25rem; color: #ddd; max-width: 800px; margin: 0 auto 40px;">
+                Mecánica avanzada, diagnosis digital y acabados de pintura perfectos. Tu coche en manos de expertos.
             </p>
             
-            <div class="hero-btns" data-aos="fade-up" data-aos-delay="400" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-                <a href="#calculadora" class="btn btn-primary">
-                    <i class="fas fa-calculator"></i> Calcular Precio
+            <div class="hero-btns">
+                <a href="#contacto" class="btn btn-primary">
+                    <i class="fas fa-calendar-check"></i> Solicitar Presupuesto
                 </a>
-                <a href="#servicios" class="btn btn-white">
-                    <i class="fas fa-arrow-down"></i> Servicios
+                <a href="#servicios" class="btn btn-outline">
+                    <i class="fas fa-layer-group"></i> Nuestros Servicios
                 </a>
             </div>
         </div>
+        <div class="scroll-down"><i class="fas fa-chevron-down"></i></div>
     </header>
 
     <section class="stats-section">
         <div class="container">
-            <div class="stats-wrapper">
-                <div class="stat-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="stats-grid">
+                <div class="stat-card">
                     <h3 class="counter" data-target="25">0</h3>
-                    <p>Años de Experiencia</p>
+                    <p>Años de Historia</p>
                 </div>
-                <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="stat-card">
                     <h3 class="counter" data-target="5200">0</h3>
-                    <p>Clientes Satisfechos</p>
+                    <p>Vehículos Reparados</p>
                 </div>
-                <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="stat-card">
                     <h3 class="counter" data-target="100">0</h3>
-                    <p>% Transparencia</p>
+                    <p>% Clientes Felices</p>
                 </div>
-                <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="stat-card">
                     <h3 class="counter" data-target="24">0</h3>
-                    <p>Meses Garantía</p>
+                    <p>Meses de Garantía</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="servicios" class="section-padding services-section">
+    <div class="brands-section">
+        <div class="brands-track">
+            <span class="brand-item">AUDI</span>
+            <span class="brand-item">BMW</span>
+            <span class="brand-item">MERCEDES</span>
+            <span class="brand-item">VOLKSWAGEN</span>
+            <span class="brand-item">SEAT</span>
+            <span class="brand-item">FORD</span>
+            <span class="brand-item">RENAULT</span>
+            <span class="brand-item">PEUGEOT</span>
+            <span class="brand-item">TOYOTA</span>
+            <span class="brand-item">AUDI</span>
+            <span class="brand-item">BMW</span>
+            <span class="brand-item">MERCEDES</span>
+            <span class="brand-item">VOLKSWAGEN</span>
+        </div>
+    </div>
+
+    <section id="servicios" class="section-padding">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
+            <div class="section-header">
                 <span class="section-subtitle">LO QUE HACEMOS</span>
-                <h2>SOLUCIONES <span class="text-primary">360°</span></h2>
-                <p>Cubrimos cada necesidad de tu vehículo sin intermediarios.</p>
+                <h2>SOLUCIONES <span class="text-primary">360 GRADOS</span></h2>
+                <p>Cubrimos todas las necesidades de tu vehículo, desde el mantenimiento básico hasta reparaciones complejas de motor y carrocería.</p>
             </div>
 
             <div class="services-grid">
                 <div class="service-card glass-panel" data-aos="fade-up" data-aos-delay="0">
-                    <div class="icon-box"><i class="fas fa-cogs"></i></div>
+                    <div class="service-icon"><i class="fas fa-cogs"></i></div>
                     <h3>Mecánica General</h3>
-                    <p>Mantenimiento preventivo y correctivo. Distribuciones, embragues y frenos.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Revisión Pre-ITV</li>
-                        <li><i class="fas fa-check"></i> Aceite y Filtros</li>
-                        <li><i class="fas fa-check"></i> Amortiguadores</li>
-                    </ul>
+                    <p>Mantenimiento preventivo, correas de distribución, embragues y frenos.</p>
+                    <div class="service-link" onclick="openServiceModal('mecanica')">Ver Detalles <i class="fas fa-arrow-right"></i></div>
                 </div>
 
                 <div class="service-card glass-panel" data-aos="fade-up" data-aos-delay="100">
-                    <div class="icon-box"><i class="fas fa-microchip"></i></div>
+                    <div class="service-icon"><i class="fas fa-microchip"></i></div>
                     <h3>Electrónica</h3>
-                    <p>Diagnosis computarizada para localizar fallos eléctricos y apagar testigos.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Scanner Multimarca</li>
-                        <li><i class="fas fa-check"></i> Baterías y Alternadores</li>
-                        <li><i class="fas fa-check"></i> Reset de Centralitas</li>
-                    </ul>
+                    <p>Diagnosis computarizada avanzada. Localización de fallos eléctricos y testigos.</p>
+                    <div class="service-link" onclick="openServiceModal('electronica')">Ver Detalles <i class="fas fa-arrow-right"></i></div>
                 </div>
 
                 <div class="service-card glass-panel" data-aos="fade-up" data-aos-delay="200">
-                    <div class="icon-box"><i class="fas fa-spray-can"></i></div>
+                    <div class="service-icon"><i class="fas fa-spray-can"></i></div>
                     <h3>Chapa y Pintura</h3>
-                    <p>Acabados de exposición. Cabina de pintura propia y colorimetría exacta.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Pintura al Horno</li>
-                        <li><i class="fas fa-check"></i> Reparación de Golpes</li>
-                        <li><i class="fas fa-check"></i> Pulido de Faros</li>
-                    </ul>
+                    <p>Cabina propia, pintura base agua PPG y acabados de exposición.</p>
+                    <div class="service-link" onclick="openServiceModal('chapa')">Ver Detalles <i class="fas fa-arrow-right"></i></div>
                 </div>
 
                 <div class="service-card glass-panel" data-aos="fade-up" data-aos-delay="300">
-                    <div class="icon-box"><i class="fas fa-snowflake"></i></div>
+                    <div class="service-icon"><i class="fas fa-snowflake"></i></div>
                     <h3>Climatización</h3>
-                    <p>Asegura tu confort. Carga de aire acondicionado y reparación de fugas.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Gas R134a / 1234yf</li>
-                        <li><i class="fas fa-check"></i> Limpieza de Circuitos</li>
-                        <li><i class="fas fa-check"></i> Filtro de Habitáculo</li>
-                    </ul>
+                    <p>Cargas de gas, detección de fugas y reparación de compresores.</p>
+                    <div class="service-link" onclick="openServiceModal('clima')">Ver Detalles <i class="fas fa-arrow-right"></i></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="galeria" class="section-padding" style="background: #080808;">
+    <section id="galeria" class="section-padding" style="background:#080808;">
         <div class="container">
-            <div class="section-header text-center">
-                <h2>NUESTROS <span class="text-primary">TRABAJOS</span></h2>
+            <div class="section-header">
+                <span class="section-subtitle">RESULTADOS REALES</span>
+                <h2>NUESTROS <span class="text-primary">PROYECTOS</span></h2>
             </div>
             
             <div class="gallery-nav">
                 <button class="gallery-btn active" onclick="filterGallery('all')">Todos</button>
                 <button class="gallery-btn" onclick="filterGallery('taller')">Mecánica</button>
-                <button class="gallery-btn" onclick="filterGallery('chapa')">Chapa y Pintura</button>
+                <button class="gallery-btn" onclick="filterGallery('chapa')">Carrocería</button>
             </div>
 
             <div class="gallery-grid">
-                <div class="gallery-item chapa">
-                    <img src="https://images.unsplash.com/photo-1632823471465-48888b1b1c67?q=80&w=800" alt="Pintura">
-                    <div class="gallery-overlay"><i class="fas fa-search"></i></div>
-                </div>
-                <div class="gallery-item taller">
-                    <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?q=80&w=800" alt="Motor">
-                    <div class="gallery-overlay"><i class="fas fa-search"></i></div>
-                </div>
-                <div class="gallery-item chapa">
-                    <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=800" alt="Coche">
-                    <div class="gallery-overlay"><i class="fas fa-search"></i></div>
-                </div>
-                <div class="gallery-item taller">
-                    <img src="https://images.unsplash.com/photo-1504222490245-4367b8b79dd3?q=80&w=800" alt="Frenos">
-                    <div class="gallery-overlay"><i class="fas fa-search"></i></div>
-                </div>
-                <div class="gallery-item taller">
-                    <img src="https://images.unsplash.com/photo-1597507316335-b223405c56a3?q=80&w=800" alt="Elevador">
-                    <div class="gallery-overlay"><i class="fas fa-search"></i></div>
-                </div>
-                <div class="gallery-item chapa">
-                    <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?q=80&w=800" alt="Pulido">
-                    <div class="gallery-overlay"><i class="fas fa-search"></i></div>
-                </div>
+                <div class="gallery-item chapa"><img src="https://images.unsplash.com/photo-1632823471465-48888b1b1c67?q=80&w=800" alt="Pintura"><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div>
+                <div class="gallery-item taller"><img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?q=80&w=800" alt="Motor"><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div>
+                <div class="gallery-item chapa"><img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=800" alt="Acabado"><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div>
+                <div class="gallery-item taller"><img src="https://images.unsplash.com/photo-1504222490245-4367b8b79dd3?q=80&w=800" alt="Frenos"><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div>
+                <div class="gallery-item taller"><img src="https://images.unsplash.com/photo-1597507316335-b223405c56a3?q=80&w=800" alt="Elevador"><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div>
+                <div class="gallery-item chapa"><img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?q=80&w=800" alt="Pulido"><div class="gallery-overlay"><i class="fas fa-search-plus"></i></div></div>
             </div>
         </div>
     </section>
@@ -595,70 +605,83 @@
             <div class="contact-wrapper">
                 
                 <div class="form-container glass-panel" data-aos="fade-right">
-                    <h3 style="margin-bottom: 25px;">CITA PREVIA</h3>
+                    <div class="form-title">
+                        <h3>SOLICITAR <span class="text-primary">PRESUPUESTO</span></h3>
+                        <p>Rellena el formulario. Te responderemos personalmente con una valoración exacta para tu vehículo.</p>
+                    </div>
                     
-                    <div class="input-wrapper">
-                        <input type="text" id="w-nombre" placeholder=" ">
+                    <div class="input-group">
+                        <input type="text" id="w-nombre" class="input-field" placeholder=" ">
                         <label>Nombre Completo</label>
                     </div>
                     
-                    <div class="input-wrapper">
-                        <input type="tel" id="w-telefono" placeholder=" ">
-                        <label>Teléfono</label>
+                    <div class="input-group">
+                        <input type="tel" id="w-telefono" class="input-field" placeholder=" ">
+                        <label>Teléfono de Contacto</label>
+                        <div class="error-message" id="phone-error">Por favor, introduce un teléfono válido.</div>
                     </div>
 
-                    <div class="input-wrapper">
-                        <select id="w-servicio" style="color:#fff;">
-                            <option value="Consulta General">Tipo de Servicio...</option>
-                            <option value="Mecánica">Mecánica General</option>
-                            <option value="Chapa">Chapa y Pintura</option>
-                            <option value="Revision">Revisión / Mantenimiento</option>
+                    <div class="input-group">
+                        <select id="w-servicio" class="input-field" style="color:#fff;">
+                            <option value="Consulta">Selecciona Servicio...</option>
+                            <option value="Mecánica General">Mecánica General</option>
+                            <option value="Chapa y Pintura">Chapa y Pintura</option>
+                            <option value="Revision Oficial">Revisión Oficial</option>
+                            <option value="Diagnosis">Diagnosis / Avería</option>
                         </select>
                     </div>
 
-                    <div class="input-wrapper">
-                        <textarea id="w-mensaje" rows="4" placeholder=" "></textarea>
-                        <label>Detalles (Modelo, Avería...)</label>
+                    <div class="input-group">
+                        <textarea id="w-mensaje" class="input-field" rows="4" placeholder=" "></textarea>
+                        <label>Modelo de coche y detalles...</label>
                     </div>
 
-                    <button onclick="sendWhatsapp()" class="btn btn-whatsapp-full">
-                        <i class="fab fa-whatsapp" style="font-size: 1.2rem;"></i> ENVIAR WHATSAPP
-                    </button>
-                    
-                    <button onclick="sendEmail()" class="btn btn-white" style="width: 100%; justify-content: center;">
-                        <i class="fas fa-envelope"></i> ENVIAR EMAIL
-                    </button>
+                    <div class="contact-btns">
+                        <button onclick="sendWhatsapp()" class="btn btn-whatsapp-full">
+                            <i class="fab fa-whatsapp"></i> Vía WhatsApp
+                        </button>
+                        <button onclick="sendEmail()" class="btn btn-email-full">
+                            <i class="fas fa-envelope"></i> Vía Email
+                        </button>
+                    </div>
                     
                     <p style="font-size: 0.75rem; text-align: center; margin-top: 15px; color: #aaa;">
-                        Al enviar aceptas nuestra <a href="#" onclick="openModal('privacy')" style="text-decoration: underline;">Política de Privacidad</a>.
+                        Al pulsar enviar aceptas nuestra <a href="#" style="text-decoration: underline;">Política de Privacidad</a>.
                     </p>
                 </div>
 
                 <div class="contact-info" data-aos="fade-left" style="color: #fff; display: flex; flex-direction: column; justify-content: center;">
                     <div class="section-header" style="text-align: left;">
-                        <span class="section-subtitle">UBICACIÓN</span>
-                        <h2>VISÍTANOS EN <br><span class="text-primary">FUENLABRADA</span></h2>
-                        <p style="color: #ccc; margin: 0;">Polígono industrial de fácil acceso. Parking propio para clientes.</p>
+                        <span class="section-subtitle">DÓNDE ESTAMOS</span>
+                        <h2>VISITA NUESTRAS <br><span class="text-primary">INSTALACIONES</span></h2>
+                        <p style="color: #ccc; margin: 0;">Polígono industrial de fácil acceso en Fuenlabrada. Contamos con parking propio para clientes.</p>
                     </div>
                     
                     <div style="margin-bottom: 40px; display: grid; gap: 20px;">
-                        <div style="display:flex; align-items:center; gap: 20px; background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px;">
+                        <div style="display:flex; align-items:center; gap: 20px; background: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px;">
                             <i class="fas fa-map-marker-alt text-primary" style="font-size: 1.5rem;"></i>
                             <div>
                                 <h5 style="margin:0;">Dirección</h5>
-                                <p style="margin:0; color:#aaa; font-size: 0.9rem;">C. Teide, 4, 28944 Fuenlabrada, Madrid</p>
+                                <p style="margin:0; color:#aaa;">C. Teide, 4, 28944 Fuenlabrada, Madrid</p>
                             </div>
                         </div>
-                        <div style="display:flex; align-items:center; gap: 20px; background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px;">
+                        <div style="display:flex; align-items:center; gap: 20px; background: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px;">
                             <i class="fas fa-phone-alt text-primary" style="font-size: 1.5rem;"></i>
                             <div>
                                 <h5 style="margin:0;">Teléfono</h5>
-                                <p style="margin:0; color:#aaa; font-size: 0.9rem;">624 13 03 34</p>
+                                <p style="margin:0; color:#aaa;">624 13 03 34</p>
+                            </div>
+                        </div>
+                        <div style="display:flex; align-items:center; gap: 20px; background: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px;">
+                            <i class="fas fa-envelope text-primary" style="font-size: 1.5rem;"></i>
+                            <div>
+                                <h5 style="margin:0;">Email</h5>
+                                <p style="margin:0; color:#aaa;">tallereslorden@gmail.com</p>
                             </div>
                         </div>
                     </div>
 
-                    <div style="height: 250px; border-radius: 20px; overflow: hidden; border: 2px solid rgba(255,255,255,0.1);">
+                    <div style="height: 300px; border-radius: 20px; overflow: hidden; border: 2px solid rgba(255,255,255,0.1);">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3042.8273648604754!2d-3.791523923389053!3d40.27680197146261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418bc244ad4a41%3A0x65ebcbcae3e8d362!2sCastrol%20Service%20Auto%20talleres%20Lorden!5e0!3m2!1ses!2ses!4v1715000000000!5m2!1ses!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
@@ -671,33 +694,33 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <a href="#" class="footer-logo"><i class="fas fa-wrench"></i> TALLERES <span>LORDEN</span></a>
-                    <p style="font-size: 0.9rem; line-height: 1.6;">
-                        Elevando el estándar de la mecánica en Madrid Sur. Compromiso, honestidad y tecnología punta al servicio de tu automóvil.
+                    <a href="#" class="footer-logo">TALLERES <span>LORDEN</span></a>
+                    <p style="margin-top:20px; line-height:1.8;">
+                        Más de 25 años ofreciendo soluciones mecánicas de alta calidad en el sur de Madrid. Tecnología, honestidad y trato cercano.
                     </p>
                 </div>
                 <div class="footer-col">
-                    <h4 class="footer-title">Servicios</h4>
+                    <h4>Navegación</h4>
                     <ul class="footer-links">
-                        <li><a href="#">Mecánica Rápida</a></li>
-                        <li><a href="#">Electrónica</a></li>
-                        <li><a href="#">Chapa y Pintura</a></li>
-                        <li><a href="#">Neumáticos</a></li>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#galeria">Proyectos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4 class="footer-title">Legal</h4>
+                    <h4>Legal</h4>
                     <ul class="footer-links">
-                        <li><a href="#" onclick="openModal('legal')">Aviso Legal</a></li>
-                        <li><a href="#" onclick="openModal('privacy')">Política Privacidad</a></li>
-                        <li><a href="#" onclick="openModal('cookies')">Política Cookies</a></li>
+                        <li><a href="#">Aviso Legal</a></li>
+                        <li><a href="#">Política Privacidad</a></li>
+                        <li><a href="#">Política Cookies</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4 class="footer-title">Horario</h4>
-                    <ul style="list-style: none; font-size: 0.9rem;">
-                        <li style="margin-bottom: 10px;"><strong style="color:#fff;">Lunes - Viernes:</strong><br>09:00 - 14:00 | 15:00 - 18:00</li>
-                        <li><strong style="color:#fff;">Fines de Semana:</strong><br>Cerrado</li>
+                    <h4>Horario</h4>
+                    <ul class="footer-contact">
+                        <li><i class="far fa-clock"></i> <div><strong>Lunes - Viernes</strong><br>09:00 - 14:00 | 15:00 - 18:00</div></li>
+                        <li><i class="fas fa-times-circle"></i> <div><strong>Fines de Semana</strong><br>Cerrado</div></li>
                     </ul>
                 </div>
             </div>
@@ -707,39 +730,51 @@
         </div>
     </footer>
 
-    <div class="modal-overlay" id="modal-legal">
-        <div class="modal-box">
-            <div class="close-modal" onclick="closeModal()">&times;</div>
-            <div class="modal-content">
-                <h3>Aviso Legal</h3>
-                <p>En cumplimiento de la Ley 34/2002, informamos que Talleres Lorden con domicilio en C. Teide 4, Fuenlabrada, es el titular de este sitio web.</p>
-                <p>El contenido de esta web es propiedad de Talleres Lorden. Queda prohibida su reproducción total o parcial sin autorización.</p>
-            </div>
+    <div id="modal-mecanica" class="service-modal">
+        <div class="service-modal-content">
+            <span class="modal-close" onclick="closeServiceModal()">×</span>
+            <h3>Mecánica General Avanzada</h3>
+            <p>Soluciones integrales para mantener tu motor en perfecto estado.</p>
+            <ul class="modal-list">
+                <li><span>Cambio de Aceite y Filtros</span> <i class="fas fa-check text-primary"></i></li>
+                <li><span>Kits de Distribución</span> <i class="fas fa-check text-primary"></i></li>
+                <li><span>Sistemas de Frenado (ABS/ESP)</span> <i class="fas fa-check text-primary"></i></li>
+                <li><span>Amortiguación y Suspensión</span> <i class="fas fa-check text-primary"></i></li>
+                <li><span>Embragues y Cajas de Cambio</span> <i class="fas fa-check text-primary"></i></li>
+                <li><span>Revisión Pre-ITV Completa</span> <i class="fas fa-check text-primary"></i></li>
+            </ul>
+            <a href="#contacto" onclick="closeServiceModal()" class="btn btn-primary" style="margin-top:20px; width:100%">Pedir Cita</a>
         </div>
     </div>
 
-    <div class="modal-overlay" id="modal-privacy">
-        <div class="modal-box">
-            <div class="close-modal" onclick="closeModal()">&times;</div>
-            <div class="modal-content">
-                <h3>Política de Privacidad</h3>
-                <p>De acuerdo con el RGPD, tus datos serán tratados para gestionar tu cita y enviarte presupuestos. No cederemos tus datos a terceros salvo obligación legal.</p>
-                <p>Puedes ejercer tus derechos de acceso, rectificación y supresión enviando un email a tallereslorden@gmail.com.</p>
-            </div>
+    <div id="modal-chapa" class="service-modal">
+        <div class="service-modal-content">
+            <span class="modal-close" onclick="closeServiceModal()">×</span>
+            <h3>Chapa y Pintura Premium</h3>
+            <p>Devolvemos a tu coche su estética original con acabados de fábrica.</p>
+            <ul class="modal-list">
+                <li><span>Reparación de Siniestros</span> <i class="fas fa-check text-primary"></i></li>
+                <li><span>Pintura Tricapa y Perlada</span> <i class="fas fa-check text-primary"></i></li>
+                <li><span>Cabina de Secado Rápido</span> <i class="fas fa-check text-primary"></i></li>
+                <li><span>Pulido de Faros</span> <i class="fas fa-check text-primary"></i></li>
+                <li><span>Tramitación con Seguros</span> <i class="fas fa-check text-primary"></i></li>
+            </ul>
+            <a href="#contacto" onclick="closeServiceModal()" class="btn btn-primary" style="margin-top:20px; width:100%">Pedir Peritaje</a>
         </div>
     </div>
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">×</span>
+        <img id="lightbox-img" src="" alt="Imagen grande">
+    </div>
 
-    <a href="https://wa.me/34624130334" class="float-btn float-wa" target="_blank" title="Contactar por WhatsApp">
+    <a href="https://wa.me/34624130334" class="float-wa" target="_blank" title="Contactar por WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
-    <div class="float-btn float-up" id="scrollTop" onclick="scrollToTop()">
-        <i class="fas fa-arrow-up"></i>
-    </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         /* =================================================================
-           JAVASCRIPT "MONOLITH" - LÓGICA AVANZADA
+           JAVASCRIPT "ENTERPRISE" V17
         ================================================================= */
         
         // 1. INICIALIZACIÓN
@@ -750,182 +785,151 @@
                 document.getElementById('preloader').style.visibility = 'hidden';
             }, 1000);
 
-            // AOS
+            // Iniciar AOS
             AOS.init({ duration: 800, once: true, offset: 50 });
-
-            // Calcular Precio Inicial
-            calculatePrice();
+            
+            // Iniciar Contadores si están visibles
+            checkCounters();
         });
 
-        // 2. CURSOR MAGNÉTICO
+        // 2. LOGICA DE CURSOR (Solo PC)
         const cursorDot = document.querySelector('.cursor-dot');
         const cursorOutline = document.querySelector('.cursor-outline');
         
         window.addEventListener('mousemove', (e) => {
-            const posX = e.clientX;
-            const posY = e.clientY;
-            
-            cursorDot.style.left = `${posX}px`;
-            cursorDot.style.top = `${posY}px`;
-            
-            // Animación suave para el outline
-            cursorOutline.animate({
-                left: `${posX}px`,
-                top: `${posY}px`
-            }, { duration: 500, fill: "forwards" });
+            // Animación fluida usando WAAPI
+            cursorDot.animate({ left: `${e.clientX}px`, top: `${e.clientY}px` }, { duration: 0, fill: "forwards" });
+            cursorOutline.animate({ left: `${e.clientX}px`, top: `${e.clientY}px` }, { duration: 500, fill: "forwards" });
         });
 
-        // Detectar elementos clickeables
-        const clickables = document.querySelectorAll('a, button, select, input, textarea');
-        clickables.forEach(el => {
+        // Detectar elementos interactivos para agrandar cursor
+        const interactives = document.querySelectorAll('a, button, input, select, textarea, .service-card');
+        interactives.forEach(el => {
             el.addEventListener('mouseenter', () => document.body.classList.add('hovering'));
             el.addEventListener('mouseleave', () => document.body.classList.remove('hovering'));
         });
 
-        // 3. NAVBAR SCROLL
+        // 3. SCROLL & NAVBAR
         window.addEventListener('scroll', () => {
             const nav = document.querySelector('.navbar');
-            const floatUp = document.getElementById('scrollTop');
-            
-            if (window.scrollY > 50) nav.classList.add('scrolled');
+            if(window.scrollY > 50) nav.classList.add('scrolled');
             else nav.classList.remove('scrolled');
-
-            if (window.scrollY > 500) floatUp.classList.add('visible');
-            else floatUp.classList.remove('visible');
-
-            // Animar Contadores
-            animateCounters();
+            checkCounters();
         });
 
-        function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
+        // 4. MENU MÓVIL
+        const toggle = document.querySelector('.mobile-toggle');
+        const mobileMenu = document.querySelector('.mobile-menu-overlay');
+        const closeMenu = document.querySelector('.close-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
 
-        // 4. ANIMACIÓN CONTADORES (Solo una vez)
+        function toggleMenu() { mobileMenu.classList.toggle('open'); }
+        toggle.addEventListener('click', toggleMenu);
+        closeMenu.addEventListener('click', toggleMenu);
+        mobileLinks.forEach(l => l.addEventListener('click', toggleMenu));
+
+        // 5. ANIMACIÓN DE NÚMEROS (CONTADORES)
         let counted = false;
-        function animateCounters() {
-            const statsSection = document.querySelector('.stats-section');
-            if (!counted && statsSection.getBoundingClientRect().top < window.innerHeight) {
+        function checkCounters() {
+            const section = document.querySelector('.stats-section');
+            if(!counted && section && section.getBoundingClientRect().top < window.innerHeight) {
                 counted = true;
-                const counters = document.querySelectorAll('.counter');
-                counters.forEach(counter => {
-                    const target = +counter.getAttribute('data-target');
-                    const duration = 2000; // ms
-                    const increment = target / (duration / 16);
-                    
+                document.querySelectorAll('.counter').forEach(c => {
+                    const target = +c.getAttribute('data-target');
                     let current = 0;
+                    const inc = target / 50;
                     const timer = setInterval(() => {
-                        current += increment;
-                        if (current >= target) {
-                            counter.innerText = target + (target > 100 ? '' : '+'); // Símbolo si es pequeño
-                            if(target == 100) counter.innerText = "100%";
-                            clearInterval(timer);
-                        } else {
-                            counter.innerText = Math.ceil(current);
-                        }
-                    }, 16);
+                        current += inc;
+                        if(current >= target) { c.innerText = target; clearInterval(timer); }
+                        else { c.innerText = Math.ceil(current); }
+                    }, 30);
                 });
             }
         }
 
-        // 5. CALCULADORA DE PRESUPUESTOS (LÓGICA)
-        function calculatePrice() {
-            const carType = parseFloat(document.getElementById('carType').value);
-            const servicePrice = parseFloat(document.getElementById('serviceType').value);
-            
-            let extras = 0;
-            if (document.getElementById('extraWash').checked) extras += parseFloat(document.getElementById('extraWash').value);
-            if (document.getElementById('extraCar').checked) extras += parseFloat(document.getElementById('extraCar').value);
-
-            // Algoritmo simple: (Precio Servicio * Multiplicador Coche) + Extras
-            let total = 0;
-            if (servicePrice > 0) {
-                total = (servicePrice * carType) + extras;
-            }
-
-            // Animación del número
-            const display = document.getElementById('finalPrice');
-            display.style.opacity = 0;
-            setTimeout(() => {
-                display.innerText = Math.round(total) + "€";
-                display.style.opacity = 1;
-            }, 200);
-        }
-
-        // 6. GALERÍA FILTRABLE
-        function filterGallery(category) {
-            const items = document.querySelectorAll('.gallery-item');
-            const buttons = document.querySelectorAll('.gallery-btn');
-            
-            // Botones
-            buttons.forEach(btn => btn.classList.remove('active'));
+        // 6. GALERÍA FILTRABLE & LIGHTBOX
+        function filterGallery(cat) {
+            document.querySelectorAll('.gallery-btn').forEach(b => b.classList.remove('active'));
             event.target.classList.add('active');
-
-            // Items
-            items.forEach(item => {
-                item.style.display = 'none';
-                if (category === 'all' || item.classList.contains(category)) {
-                    // Pequeño fade in
-                    item.style.opacity = 0;
+            document.querySelectorAll('.gallery-item').forEach(item => {
+                if(cat === 'all' || item.classList.contains(cat)) {
                     item.style.display = 'block';
                     setTimeout(() => item.style.opacity = 1, 50);
+                } else {
+                    item.style.opacity = 0;
+                    setTimeout(() => item.style.display = 'none', 300);
                 }
             });
         }
 
-        // 7. MODALES
-        function openModal(id) {
-            const modal = document.getElementById('modal-' + id);
-            if(modal) modal.classList.add('active');
-        }
-        function closeModal() {
-            document.querySelectorAll('.modal-overlay').forEach(m => m.classList.remove('active'));
-        }
-        // Cerrar al hacer clic fuera
-        document.querySelectorAll('.modal-overlay').forEach(m => {
-            m.addEventListener('click', (e) => {
-                if (e.target === m) closeModal();
+        // Lightbox Logic
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const img = item.querySelector('img');
+                lightboxImg.src = img.src;
+                lightbox.classList.add('active');
             });
         });
 
-        // 8. ENVÍO FORMULARIO
+        function closeLightbox() { lightbox.classList.remove('active'); }
+        lightbox.addEventListener('click', (e) => { if(e.target === lightbox) closeLightbox(); });
+
+        // 7. MODALES DE SERVICIO
+        function openServiceModal(id) {
+            // Cerrar otros si hay
+            closeServiceModal();
+            const modal = document.getElementById('modal-' + id);
+            if(modal) modal.classList.add('active');
+        }
+        function closeServiceModal() {
+            document.querySelectorAll('.service-modal').forEach(m => m.classList.remove('active'));
+        }
+        document.querySelectorAll('.service-modal').forEach(m => {
+            m.addEventListener('click', (e) => { if(e.target === m) closeServiceModal(); });
+        });
+
+        // 8. FORMULARIO CONTACTO (VALIDACIÓN & ENVÍO)
         function sendWhatsapp() {
-            const n = document.getElementById('w-nombre').value;
-            const t = document.getElementById('w-telefono').value;
+            const n = document.getElementById('w-nombre').value.trim();
+            const t = document.getElementById('w-telefono').value.trim();
             const s = document.getElementById('w-servicio').value;
-            const m = document.getElementById('w-mensaje').value;
+            const m = document.getElementById('w-mensaje').value.trim();
             
-            if(!n || !t) { alert("Nombre y Teléfono son obligatorios"); return; }
-            
-            const url = `https://wa.me/34624130334?text=Hola,%20soy%20${n}.%0AAsunto:%20${s}%0A${m}`;
+            if(!validateForm(n, t)) return;
+
+            const url = `https://wa.me/34624130334?text=Hola,%20soy%20${n}.%0ATeléfono:%20${t}%0AAsunto:%20${s}%0A${m}`;
             window.open(url, '_blank');
         }
 
         function sendEmail() {
-            const n = document.getElementById('w-nombre').value;
+            const n = document.getElementById('w-nombre').value.trim();
+            const t = document.getElementById('w-telefono').value.trim();
             const s = document.getElementById('w-servicio').value;
-            const m = document.getElementById('w-mensaje').value;
-            window.location.href = `mailto:tallereslorden@gmail.com?subject=Cita Web - ${s}&body=Cliente: ${n}%0D%0ADetalles: ${m}`;
+            const m = document.getElementById('w-mensaje').value.trim();
+            
+            if(!validateForm(n, t)) return;
+
+            window.location.href = `mailto:tallereslorden@gmail.com?subject=Solicitud Presupuesto - ${s}&body=Cliente: ${n}%0D%0ATeléfono: ${t}%0D%0ADetalles: ${m}`;
         }
-        
-        // Menú Móvil
-        const toggle = document.querySelector('.mobile-toggle');
-        const navLinks = document.querySelector('.nav-links');
-        
-        toggle.addEventListener('click', () => {
-            if(navLinks.style.display === 'flex') {
-                navLinks.style.display = 'none';
-            } else {
-                navLinks.style.display = 'flex';
-                navLinks.style.flexDirection = 'column';
-                navLinks.style.position = 'absolute';
-                navLinks.style.top = '80px';
-                navLinks.style.left = '0';
-                navLinks.style.width = '100%';
-                navLinks.style.background = '#000';
-                navLinks.style.padding = '20px';
+
+        function validateForm(name, phone) {
+            const phoneError = document.getElementById('phone-error');
+            if(!name || !phone) {
+                alert("Por favor, rellena nombre y teléfono.");
+                return false;
             }
-        });
+            // Regex simple para teléfonos España (empiezan por 6, 7, 8, 9 y tienen 9 dígitos)
+            const phoneRegex = /^[6789]\d{8}$/;
+            if (!phoneRegex.test(phone.replace(/\s/g, ''))) {
+                phoneError.style.display = 'block';
+                return false;
+            }
+            phoneError.style.display = 'none';
+            return true;
+        }
 
     </script>
 </body>
